@@ -8,13 +8,53 @@ body {
 }
 
 /* Le bloc tout en haut avec ton nom */
+/* On ajoute une règle à l'en-tête pour qu'il reste au premier plan */
 .en-tete {
-    background-color: #2c3e50; /* Un bleu-gris professionnel */
+    background-color: #2c3e50;
     color: white;
-    text-align: center;
-    padding: 30px 10px;
+    padding: 20px 40px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    /* NOUVEAU : S'assure que tout ce qui déborde passe au-dessus du reste */
+    position: relative;
+    z-index: 10; 
 }
 
+/* On agrandit la boîte qui contient l'image (on passe de 180px à 220px) */
+.boite-image {
+    flex: 0 0 220px; 
+    display: flex;
+    justify-content: center;
+}
+
+/* On agrandit la photo et on la décale vers le bas */
+.image-profil {
+    width: 200px; /* Image plus grande */
+    height: auto;
+    border-radius: 8px;
+    
+    /* NOUVEAU : Le décalage et l'ombre */
+    position: relative;
+    top: 40px; /* Pousse l'image de 40 pixels vers le bas */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Ajoute une ombre pour l'effet 3D */
+}
+
+/* On fait la même chose pour le schéma */
+.image-schema {
+    width: 220px; /* Schéma plus grand */
+    height: auto;
+    border-radius: 4px;
+    background-color: white;
+    padding: 5px;
+    
+    /* NOUVEAU : Le décalage et l'ombre */
+    position: relative;
+    top: 40px; /* Pousse le schéma de 40 pixels vers le bas */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
 /* La zone blanche au milieu qui contient ton parcours */
 .contenu-principal {
     max-width: 800px;
@@ -42,4 +82,30 @@ body {
 /* Un peu d'espace entre les points de tes listes */
 li {
     margin-bottom: 8px;
+}
+
+/* L'alignement du menu sous le texte */
+.menu-onglets {
+    margin-top: 25px; /* Pousse les onglets vers le bas */
+    display: flex;
+    justify-content: center; /* Centre les onglets au milieu de la page */
+    gap: 15px; /* Ajoute de l'espace entre chaque onglet */
+}
+
+/* L'apparence de chaque onglet */
+.onglet {
+    text-decoration: none; /* Enlève le soulignement classique des liens Internet */
+    color: white;
+    background-color: #34495e; /* Un bleu-gris un peu plus clair que le fond */
+    padding: 10px 25px;
+    border-radius: 8px 8px 0 0; /* L'astuce : arrondit le haut, garde le bas plat */
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s; /* Rend l'animation au survol douce et fluide */
+}
+
+/* L'effet quand la souris passe sur un onglet */
+.onglet:hover {
+    background-color: #3498db; /* Devient bleu vif au survol */
+    color: white;
 }
