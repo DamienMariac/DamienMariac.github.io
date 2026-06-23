@@ -1,0 +1,45 @@
+/* Fond de la page et police d'écriture globale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Le bloc tout en haut avec ton nom */
+.en-tete {
+    background-color: #2c3e50; /* Un bleu-gris professionnel */
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+/* La zone blanche au milieu qui contient ton parcours */
+.contenu-principal {
+    max-width: 800px;
+    background-color: white;
+    margin: 20px auto; /* Le "auto" permet de centrer la page sur l'écran */
+    padding: 30px;
+    border-radius: 8px; /* Bords légèrement arrondis */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Petite ombre légère pour détacher la feuille */
+}
+
+/* Le style des titres de chaque partie (Résumé, Expérience...) */
+.rubrique h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db; /* Un petit trait bleu sous les titres */
+    padding-bottom: 5px;
+}
+
+/* Mettre la date en gris, en italique, et la remonter un peu */
+.date-lieu {
+    color: #666;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+/* Un peu d'espace entre les points de tes listes */
+li {
+    margin-bottom: 8px;
+}

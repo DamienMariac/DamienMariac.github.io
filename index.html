@@ -1,1 +1,50 @@
-test
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Cette ligne permet au site de s'adapter aux écrans de téléphones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Damien Mariac</title>
+    <!-- C'est ici qu'on fait le lien avec ton fichier de mise en page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- L'en-tête de la page -->
+    <header class="en-tete">
+        <h1>Damien Mariac</h1>
+        <h2>Statisticien & Modélisation en Biologie</h2>
+        <p>GitHub: github.com/DamienMariac | Email: damien.mariac@email.com</p>
+    </header>
+
+    <!-- Le corps du CV -->
+    <main class="contenu-principal">
+        
+        <section class="rubrique">
+            <h3>Résumé</h3>
+            <p>Statisticien travaillant sur des modèles statistiques appliqués à la biologie. J'aime concevoir des codes simples, fonctionnels et optimisés, et vulgariser les approches mathématiques.</p>
+        </section>
+
+        <section class="rubrique">
+            <h3>Expérience</h3>
+            <div class="experience">
+                <h4>Stage en Modélisation Statistique</h4>
+                <p class="date-lieu">Juin 2026 - Présent | MIVEGEC</p>
+                <ul>
+                    <li>Analyse de données génétiques (interactions hôte-virus, VHC).</li>
+                    <li>Création et manipulation de matrices de parenté (GRM).</li>
+                    <li>Parallélisation de code en R pour optimiser des calculs intensifs sur des modèles mixtes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="rubrique">
+            <h3>Compétences Techniques</h3>
+            <ul>
+                <li><strong>Programmation :</strong> R (data.table, ggplot2, doParallel, GMMAT), notions de HTML/CSS.</li>
+                <li><strong>Statistiques :</strong> Modèles Mixtes Linéaires Généralisés (GLMM), modélisation de matrices.</li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+</html>
